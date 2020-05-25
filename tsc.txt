@@ -1,0 +1,40 @@
+ O volume na unidade C ‚ System
+ O N£mero de S‚rie do Volume ‚ 36E5-848A
+
+ Pasta de C:\docker\laravel
+
+25/05/2020  11:43    <DIR>          .
+25/05/2020  11:43    <DIR>          ..
+21/05/2020  16:50    <DIR>          .docker
+20/05/2020  17:59               220 .editorconfig
+21/05/2020  18:34               822 .env
+20/05/2020  17:59               778 .env.example
+20/05/2020  17:59               111 .gitattributes
+20/05/2020  17:59               163 .gitignore
+20/05/2020  17:59               174 .styleci.yml
+20/05/2020  18:22    <DIR>          app
+20/05/2020  17:59             1.686 artisan
+20/05/2020  18:22    <DIR>          bootstrap
+20/05/2020  17:59             1.586 composer.json
+20/05/2020  18:05           208.546 composer.lock
+20/05/2020  18:22    <DIR>          config
+20/05/2020  18:22    <DIR>          database
+21/05/2020  17:01             1.426 docker-compose.yaml
+21/05/2020  18:27               657 Dockerfile
+21/05/2020  16:57               822 envantigoenv_old
+20/05/2020  18:29    <DIR>          html
+21/05/2020  18:38    <DIR>          node_modules
+20/05/2020  17:59             1.034 package.json
+20/05/2020  17:59             1.197 phpunit.xml
+20/05/2020  18:22    <DIR>          public
+20/05/2020  17:59             4.465 README.md
+20/05/2020  18:22    <DIR>          resources
+20/05/2020  18:22    <DIR>          routes
+20/05/2020  17:59               563 server.php
+20/05/2020  18:22    <DIR>          storage
+20/05/2020  18:22    <DIR>          tests
+25/05/2020  11:43                 0 tsc.txt
+20/05/2020  18:22    <DIR>          vendor
+20/05/2020  17:59               538 webpack.mix.js
+              18 arquivo(s)        224.788 bytes
+              15 pasta(s)   15.372.181.504 bytes dispon¡veis
