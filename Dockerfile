@@ -1,4 +1,5 @@
 FROM php:7.3.6-fpm-alpine3.9
+
 RUN apk add --no-cache openssl bash mysql-client nodejs npm
 RUN docker-php-ext-install pdo pdo_mysql
 
@@ -8,10 +9,11 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
     && rm dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
 WORKDIR /var/www
-RUN rm -rf /var/www/html
 
+RUN rm -rf /var/www/html
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
+#COPY . /var/www
 RUN ln -s public html
 EXPOSE 9000
 ENTRYPOINT [ "php-fpm" ]
