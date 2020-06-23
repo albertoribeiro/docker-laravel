@@ -10,4 +10,5 @@ steps:
 
 - id: "Rodando o composer"
   name: 'gcr.io/cloud-builders/docker'
-  args: ['exec','-t','app','composer','install']
+  args: ['exec','-t','app','composer','install','--install-dir=/usr/local']
+ 
