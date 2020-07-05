@@ -34,9 +34,19 @@ steps:
 
   - id: "Adjusting deployment file - K8s"
     name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: '/bin/sh'
     args:
       - '-c'
       - |
         sed 's#img-app-deployment#gcr.io/$PROJECT_ID/app-laravel:$SHORT_SHA#g' .K8s/app/deployment.yaml > K8s/app/deployment-new.yaml;
         cat K8s/app/deployment-new.yaml;
   
+  - id: "Deployng K8s"
+    name: 'gcr.io/cloud-builders/kubectl'
+    args:
+      - 'apply'
+      - '-f'
+      - 'K8s/app/deployment-new.yaml'
+    env:
+    - 'CLOUDSDK_COMPUTE_ZONE=us-central1-c'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-docker-laravel'
