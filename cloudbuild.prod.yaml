@@ -38,7 +38,7 @@ steps:
     args:
       - '-c'
       - |
-        sed 's#img-app-deployment#gcr.io/$PROJECT_ID/app-laravel:$SHORT_SHA#g' .K8s/app/deployment.yaml > K8s/app/deployment-new.yaml;
+        sed 's#img-app-deployment#gcr.io/$PROJECT_ID/app-laravel:$SHORT_SHA#g' K8s/app/deployment.yaml > K8s/app/deployment-new.yaml;
         cat K8s/app/deployment-new.yaml;
   
   - id: "Deployng K8s"
